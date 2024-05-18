@@ -1,0 +1,11 @@
+lpips==0.1.4
+numpy==1.21.5
+opencv_python==4.9.0.80
+pandas==2.2.2
+Pillow==9.0.1
+Pillow==10.3.0
+PyYAML==5.4.1
+PyYAML==6.0.1
+scipy==1.8.0
+torch==2.2.2
+torchvision==0.17.2
