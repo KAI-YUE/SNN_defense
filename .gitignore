@@ -106,3 +106,5 @@ archive/
 # data files
 *.pth
 *.npy
+
+experiments/
