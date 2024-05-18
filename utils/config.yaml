@@ -17,7 +17,7 @@ model: "lenet"
 compress: "none"
 
 fed_lr: 0.003
-tau: 20
+tau: 10
 
 batch_size: 16
 rog_lr: 0.05

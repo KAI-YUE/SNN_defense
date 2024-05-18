@@ -37,13 +37,6 @@ def main(config_file):
     fedalg = fedlearning_registry[config.fedalg](criterion, model, config) 
     grad = fedalg.client_grad(x, onehot)
 
-    # gradient postprocessing
-    if config.compress != "none":
-        compressor = compress_registry[config.compress](config)
-        for i, g in enumerate(grad):
-            compressed_res = compressor.compress(g)
-            grad[i] = compressor.decompress(compressed_res)
-
     # initialize an attacker and perform the attack 
     attacker = Attacker(config, criterion)
     attacker.init_attacker_models(config)
